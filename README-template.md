@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/darpots/fm-ping](https://github.com/darpots/fm-ping)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://fm-ping.vercel.app](https://fm-ping.vercel.app)
 
 ## Author
 
