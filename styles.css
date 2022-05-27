@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* SITE STYLES */
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleBlue: hsl(223, 100%, 88%);
+  --lightRed: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --veryDarkBlue: hsl(210, 32%, 12%);
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+}
+
+/* MOBILE */
+.logo {
+  margin: 5rem auto 0;
+  width: 3.5rem;
+}
+.headline {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--gray);
+}
+
+.headline span {
+  color: var(--veryDarkBlue);
+  font-weight: 700;
+}
+
+.sub-headline {
+  margin-top: 0.9375rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-align: center;
+  color: var(--veryDarkBlue);
+}
+
+.subscribe {
+  margin: 2rem auto 0;
+  display: block;
+}
+
+.email {
+  width: 17.5625rem;
+  height: 2.5rem;
+  border: 0.0625rem solid var(--paleBlue);
+  box-shadow: 0rem 0rem 0.4375rem 0.1875rem rgba(0, 0, 0, 0.0001);
+  border-radius: 1.75rem;
+  padding-left: 2rem;
+}
+
+.email::placeholder {
+  color: red;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: var(--paleBlue);
+}
+
+.subscribe button {
+  display: block;
+  width: 17.5625rem;
+  height: 2.5rem;
+  margin: 0.625rem auto 0;
+  background: var(--blue);
+  box-shadow: 0rem 0.3125rem 0.625rem 0.125rem rgba(76, 123, 243, 0.230414);
+  border-radius: 1.75rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  opacity: 0.4;
+}
+
+.invalid-email {
+  display: none;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0078rem;
+}
+
+.error-input {
+  border: 0.0625rem solid var(--lightRed);
+}
+
+.error-message {
+  display: block;
+  color: var(--lightRed);
+}
+
+.hero-image {
+  margin: 4.5rem auto 0;
+  width: 20rem;
+}
+
+.social-section {
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.0574rem solid rgba(76, 123, 243, 0.15);
+  display: grid;
+  place-content: center;
+  margin-right: 0.75rem;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover {
+  background: var(--blue);
+  color: white;
+  border: 0.0574rem solid var(--blue);
+}
+
+.copyright {
+  margin-top: 1.6875rem;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: var(--gray);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 48rem) {
+  .logo {
+    width: 5.625rem;
+  }
+  .headline {
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .sub-headline {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .email {
+    width: 26.3125rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+    padding-left: 1.875rem;
+  }
+
+  .email::placeholder {
+    font-size: 1rem;
+  }
+  .error-message {
+    display: block;
+    text-align: left;
+    padding-left: 1.875rem;
+    margin-top: 0.375rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.0094rem;
+  }
+  .subscribe button {
+    margin: 0;
+    display: inline-block;
+    width: 12.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  .hero-image {
+    margin: 5.875rem auto 0;
+    width: 40rem;
+  }
+
+  .social-section {
+    margin-top: 4.5rem;
+  }
+
+  .copyright {
+    margin-top: 1.5625rem;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+  }
+}
