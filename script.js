@@ -12,5 +12,10 @@ button.addEventListener('click', function (e) {
   if (!input.value.match(emailRegex)) {
     input.classList.add('error-input');
     message.classList.add('error-message');
+    message.innerText = 'Please provide a valid email address';
+  }
+
+  if (input.value === '') {
+    message.innerText = 'Whoops! It looks like you forgot to add your email';
   }
 });
