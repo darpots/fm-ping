@@ -22,50 +22,55 @@
     <title>Ping</title>
   </head>
   <body>
-    <div class="logo">
-      <img src="/images/logo.svg" alt="logo" />
-    </div>
+    <header>
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
+    </header>
+    <section>
+      <div>
+        <h1 class="headline">We are launching <span>soon!</span></h1>
+        <p class="sub-headline">Subscribe and get notified</p>
+      </div>
 
-    <div>
-      <h1 class="headline">We are launching <span>soon!</span></h1>
-      <p class="sub-headline">Subscribe and get notified</p>
-    </div>
-
-    <div>
-      <form class="subscribe">
-        <div>
-          <input
-            class="email"
-            type="email"
-            placeholder="Your email address..."
-            required
-          />
+      <div>
+        <form class="subscribe">
           <div>
-            <p class="invalid-email">Please provide a valid email address</p>
+            <input
+              class="email"
+              type="email"
+              placeholder="Your email address..."
+              required
+            />
+            <div>
+              <p class="invalid-email">Please provide a valid email address</p>
+            </div>
           </div>
+          <button class="button">Notify Me</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="hero-image">
+        <img src="/images/illustration-dashboard.png" alt="dashboard" />
+      </div>
+
+      <div class="social-section">
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook-f"></i>
         </div>
-        <button class="button">Notify Me</button>
-      </form>
-    </div>
-
-    <div class="hero-image">
-      <img src="/images/illustration-dashboard.png" alt="dashboard" />
-    </div>
-
-    <div class="social-section">
-      <div class="social-icon">
-        <i class="fa-brands fa-facebook-f"></i>
+        <div class="social-icon">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
-      <div class="social-icon">
-        <i class="fa-brands fa-twitter"></i>
+    </section>
+    <footer>
+      <div class="copyright">
+        <p>&#169; Copyright Ping All rights reserved</p>
       </div>
-      <div class="social-icon">
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <p>&#169; Copyright Ping All rights reserved</p>
-    </div>
+    </footer>
   </body>
 </html>
